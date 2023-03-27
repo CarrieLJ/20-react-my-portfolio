@@ -3,9 +3,10 @@ import '../styles/Footer.css';
 
 const footerStyle = {
     background: '386641',
-    justifyContent: 'space-between',
+    justifyContent: 'center',
     display: 'flex',
     flexDirection: 'row',
+    container: 'bottom',
 };
 
 function Footer() {

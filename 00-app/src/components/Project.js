@@ -19,13 +19,13 @@ function Project() {
     <section style={styles.sectionStyles} className="section">
       <h2>Portfolio of Carrie Jensen</h2>
       <p>
-        Enter text here
+        {/* Enter text here
       </p>
       <p>
         Enter text here
       </p>
       <p>
-        Enter text here
+        Enter text here */}
       </p>
     </section>
   );

@@ -15,7 +15,7 @@ const liStyle = {
 function Navigation({ currentPage, handlePageChange }) {
   return (
     <nav style={navBarStyles} className="navbar">
-      <a href="/">Portfolio of Carrie Jensen</a>
+      <a href="/">Welcome</a>
         <ul className="nav nav-tabs" style={navBarStyles}>
         <li style={liStyle} className="nav-item" >
           <a
@@ -23,7 +23,7 @@ function Navigation({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange('About')}
             className={currentPage === 'About' ? 'nav-link active' : 'nav-link'}
           >
-            About
+            About Me
           </a>
         </li>
         <li style={liStyle} className="nav-item">
@@ -32,7 +32,7 @@ function Navigation({ currentPage, handlePageChange }) {
             onClick={() => handlePageChange('Project')}
             className={currentPage === 'Project' ? 'nav-link active' : 'nav-link'}
           >
-            Project
+            Portfolio
           </a>
         </li>
         <li style={liStyle} className="nav-item">
