@@ -8,21 +8,25 @@ import '../styles/Navigation.css';
 // On a style object, we camelCase all property names, and put all of the values in quotes
 // Non quoted values default to "pixels", e.g. height, margin, padding
 
-const styles = {
-  navbarStyle: {
+const navBarStyles = {
     background: '386641',
-    justifyContent: 'flex-end',
-  },
+    justifyContent: 'space-between',
+    display: 'flex',
+    flexDirection: 'row',
 };
+
+const liStyle = {
+  listStyleType: 'none'  
+}
 
 // We use JSX curly braces to evaluate the style object on the JSX tag
 
 function Navigation({ currentPage, handlePageChange }) {
   return (
-    <nav style={styles.navbarStyle} className="navbar">
+    <nav style={navBarStyles} className="navbar">
       <a href="/">Portfolio of Carrie Jensen</a>
-        <ul className="nav nav-tabs">
-        <li className="nav-item">
+        <ul className="nav nav-tabs" style={navBarStyles}>
+        <li style={liStyle} className="nav-item" >
           <a
             href="#about"
             onClick={() => handlePageChange('About')}
@@ -33,7 +37,7 @@ function Navigation({ currentPage, handlePageChange }) {
             About
           </a>
         </li>
-        <li className="nav-item">
+        <li style={liStyle} className="nav-item">
           <a
             href="#portfolio"
             onClick={() => handlePageChange('Portfolio')}
@@ -43,7 +47,7 @@ function Navigation({ currentPage, handlePageChange }) {
             Portfolio
           </a>
         </li>
-        <li className="nav-item">
+        <li style={liStyle} className="nav-item">
           <a
             href="#contact"
             onClick={() => handlePageChange('Contact')}
@@ -52,7 +56,8 @@ function Navigation({ currentPage, handlePageChange }) {
           >
             Contact
           </a>
-          <li className="nav-item">
+        </li>
+          <li style={liStyle} className="nav-item">
           <a
             href="#resume"
             onClick={() => handlePageChange('Resume')}
@@ -62,7 +67,6 @@ function Navigation({ currentPage, handlePageChange }) {
             Resume
           </a>
           </li>
-        </li>
       </ul>
     </nav>  
   );
