@@ -1,12 +1,12 @@
 .footer {
-    background: #f2e8cf;
-    height: 200px;
-  }
-  
-  .footer h1 {
-    margin: 0;
-    padding-bottom: 75px;
-    text-align: center;
-    color: #386641;
-    font-size: 3rem;
-  }
+  background: #386641;
+  height: 60px;
+}
+
+.footer a {
+  color: #a7c957;
+  font-size: 1.3rem;
+  text-decoration: none;
+  margin: 5px;
+  line-height: 3;
+}

@@ -1,21 +1,19 @@
 import React from 'react';
 import '../styles/Footer.css';
 
-const styles = {
-  footerStyle: {
-    background: 'f2e8cf',
-  },
-  footerStyle: {
-    fontSize: '100px',
-  },
+const footerStyle = {
+    background: '386641',
+    justifyContent: 'space-between',
+    display: 'flex',
+    flexDirection: 'row',
 };
 
-function Footer() {
+function Footer({ currentPage, handlePageChange }) {
   return (
-    <footer style={styles.footerStyle} className="footer">
-      <h1 style={styles.footerStyle}>Carrie Jensen</h1>
+    <footer style={footerStyle} className="footer">
+      <a href="/">Portfolio of Carrie Jensen</a>
     </footer>
-  );
-}
+  )
+};
 
 export default Footer;
