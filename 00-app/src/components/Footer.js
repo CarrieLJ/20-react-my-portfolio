@@ -8,10 +8,11 @@ const footerStyle = {
     flexDirection: 'row',
 };
 
-function Footer({ currentPage, handlePageChange }) {
+function Footer({ }) {
   return (
     <footer style={footerStyle} className="footer">
-      <a href="/">Portfolio of Carrie Jensen</a>
+      <a href="https://github.com/CarrieLJ">GitHub</a>
+      <a href="https://www.linkedin.com/in/carrie-jensen-b184a991/">LinkedIn</a>
     </footer>
   )
 };
