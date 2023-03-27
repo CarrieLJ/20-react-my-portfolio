@@ -17,9 +17,9 @@ function App() {
   return (
     <div>
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-      <Header />
-      <Project />
-      <Footer />
+      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Project currentPage={currentPage} handlePageChange={handlePageChange} />
+      <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
     </div>
   );
 }

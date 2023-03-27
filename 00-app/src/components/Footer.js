@@ -6,15 +6,20 @@ const footerStyle = {
     justifyContent: 'center',
     display: 'flex',
     flexDirection: 'row',
-    container: 'bottom',
-};
+  };
+
+const footerContainer = {
+  alignItems: 'bottom',
+}
 
 function Footer() {
   return (
+    <div style={footerContainer}>
     <footer style={footerStyle} className="footer">
       <a href="https://github.com/CarrieLJ">GitHub</a>
       <a href="https://www.linkedin.com/in/carrie-jensen-b184a991/">LinkedIn</a>
     </footer>
+    </div>
   )
 };
 

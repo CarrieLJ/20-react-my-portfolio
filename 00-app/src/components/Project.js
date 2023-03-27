@@ -18,15 +18,13 @@ function Project() {
   return (
     <section style={styles.sectionStyles} className="section">
       <h2>Portfolio of Carrie Jensen</h2>
-      <p>
-        {/* Enter text here
-      </p>
-      <p>
-        Enter text here
-      </p>
-      <p>
-        Enter text here */}
-      </p>
+      <div>
+        {/* <a href="https://carrielj.github.io/Project-1-Movie_Randomizer/">
+        <img src={`../assets/demo-screenshot-one.png`}> */}
+      </div>
+      <div>
+        {/* <a href="https://did-i-need-that.herokuapp.com/"><img src="./assets.css/did_i_need_that.JPG" style="width: 80%;"> </a> */}
+      </div>
     </section>
   );
 }
