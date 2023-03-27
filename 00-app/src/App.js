@@ -3,6 +3,7 @@ import Header from "./components/Header";
 import Project from "./components/Project";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
+// import Container from "./components/container";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
     </div>
   );
 }
+
 
 export default App;
 

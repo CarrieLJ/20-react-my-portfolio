@@ -8,7 +8,7 @@ const footerStyle = {
     flexDirection: 'row',
 };
 
-function Footer({ }) {
+function Footer() {
   return (
     <footer style={footerStyle} className="footer">
       <a href="https://github.com/CarrieLJ">GitHub</a>
