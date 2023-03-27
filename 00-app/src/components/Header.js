@@ -10,7 +10,7 @@ import '../styles/Header.css';
 
 const styles = {
   headerStyle: {
-    background: 'red',
+    background: 'f2e8cf',
   },
   headingStyle: {
     fontSize: '100px',
@@ -22,7 +22,7 @@ const styles = {
 function Header() {
   return (
     <header style={styles.headerStyle} className="header">
-      <h1 style={styles.headingStyle}>Welcome</h1>
+      <h1 style={styles.headingStyle}>Carrie Jensen</h1>
     </header>
   );
 }

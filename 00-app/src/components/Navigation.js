@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/Portfolio.css';
+import '../styles/Navigation.css';
 
-// By importing the Section.css file, it is added to the DOM whenever this component loads
+// By importing the Navbar.css file, it is added to the DOM whenever this component loads
 
 // We can also style a component inside of its JavaScript file by adding style properties to its rendered elements
 // Unlike regular HTML, a JSX style property must be an object instead of a string
@@ -9,28 +9,20 @@ import '../styles/Portfolio.css';
 // Non quoted values default to "pixels", e.g. height, margin, padding
 
 const styles = {
-  sectionStyles: {
-    background: 'orange',
+  navbarStyle: {
+    background: '386641',
+    justifyContent: 'flex-end',
   },
 };
 
 // We use JSX curly braces to evaluate the style object on the JSX tag
 
-function Portfolio() {
+function Navigation() {
   return (
-    <section style={styles.sectionStyles} className="portfolio">
-      <h2>Portfolio of Carrie Jensen</h2>
-      <p>
-        Enter text here
-      </p>
-      <p>
-        Enter text here
-      </p>
-      <p>
-        Enter text here
-      </p>
-    </section>
+    <nav style={styles.navbarStyle} className="navbar">
+      <a href="/">Portfolio of Carrie Jensen</a>
+    </nav>
   );
 }
 
-export default Portfolio;
+export default Navigation;
