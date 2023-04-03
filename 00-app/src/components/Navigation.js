@@ -11,11 +11,11 @@ const navBarStyles = {
 const liStyle = {
   listStyleType: 'none'  
 }
+    // <nav style={navBarStyles} className="navbar">
+    //   <a href="/">Welcome</a>
 
 function Navigation({ currentPage, handlePageChange }) {
   return (
-    <nav style={navBarStyles} className="navbar">
-      <a href="/">Welcome</a>
         <ul className="nav nav-tabs" style={navBarStyles}>
         <li style={liStyle} className="nav-item" >
           <a
@@ -54,7 +54,7 @@ function Navigation({ currentPage, handlePageChange }) {
           </a>
           </li>
       </ul>
-    </nav>  
+    // </nav>  
   );
 }
 

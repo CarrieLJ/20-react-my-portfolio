@@ -3,9 +3,9 @@ import Header from "./components/Header";
 import Project from "./components/Project";
 import Navigation from "./components/Navigation";
 import Footer from "./components/Footer";
-import About from "./components/pages/About";
-import Contact from "./components/pages/Contact";
-import Resume from "./components/pages/resume";
+// import About from "./components/pages/About";
+// import Contact from "./components/pages/Contact";
+// import Resume from "./components/pages/resume";
 
 
 function App() {
@@ -16,16 +16,19 @@ function App() {
   };
   return (
     <div>
+      <Header>         
       <Navigation currentPage={currentPage} handlePageChange={handlePageChange} />
-      <Header currentPage={currentPage} handlePageChange={handlePageChange} />
-      <Project currentPage={currentPage} handlePageChange={handlePageChange} />
-      <Footer currentPage={currentPage} handlePageChange={handlePageChange} />
-    </div>,
-    <div>
-      <About />
-      <Contact />
-      <Resume />
+      </Header>
+      <main>
+            <Project currentPage={currentPage} handlePageChange={handlePageChange} />
+      </main>
+      <Footer />
     </div>
+    // <div>
+    //   <About />
+    //   <Contact />
+    //   <Resume />
+    // </div>
   );
 }
 
