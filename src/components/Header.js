@@ -16,6 +16,6 @@ function Header() {
       <h1 style={styles.headingStyle}>Carrie Jensen</h1>
     </header>
   );
-}
+};
 
 export default Header;
